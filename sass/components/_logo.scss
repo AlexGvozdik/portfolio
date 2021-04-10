@@ -1,0 +1,37 @@
+// .logo {
+//     color: #000000;
+//     font-family: var(--secondary-fonts);
+
+//     @include font(26px, 700, 31px);
+
+//     &--whited {
+//         color: var(--secondary-text-color);
+//     }
+
+//     &__web {
+//         color: var(--accent-text-color)
+//     }
+
+// }
+
+.logo {
+    color: var(--primary-text-color);
+    font-family: var(--secondary-fonts);
+
+    @include font(24px, 700, 28px);
+
+    &--whited {
+        color: var(--secondary-text-color);
+    }
+
+    &__web {
+        color: var(--accent-text-color)
+    }
+}
+
+@media screen and (max-width:767px) {
+    .logo {
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
