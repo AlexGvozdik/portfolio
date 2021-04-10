@@ -32,6 +32,27 @@
             <div class="content__circle  content__circle--third"></div>
         </div>
     </div>
+
+    <!-- поп-АП -->
+
+    <div class="popap">
+        <div class="popap__content">
+            <div class="popap__thumb-picture">
+                <img src="./img/presents.png" alt="мороженное" class="popap__picture">
+            </div>
+            <div class="popap__info">
+                <button type="button" class="popap__close-btn close" data-menu-close>
+                <svg class="popap__icon-cross" width="30" height="30">
+                    <use href="./img/svg-icon/sprite.svg#icon-drop-cross"></use>
+                </svg>
+            </button>
+                <h3 class="popap__title-small">Special Offer</h3>
+                <h2 class="popap__title-big">80 <sup class="popap__sup">%</sup> <span class="popap__span">OFF</span></h2>
+                <p class="popap__text-rules">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <a class="popap__link link" href="">Get it now</a>
+            </div>
+        </div>
+    </div>
     <!-- Наш Хэдэр -->
     <header class="header">
         <!-- навигация  -->
@@ -46,7 +67,8 @@
                         <a href="./index.html" class="header__anchor link active-page">Студия</a>
                     </li>
                     <li class="header__item">
-                        <a href="./portfolio.html" class="header__anchor link">Портфолио</a>
+                        <a href="./portfolio.html" class="header__anchor header__anchor--effect link">Портфолио
+                        <span class="header__span"></span></a>
                     </li>
                     <li class="header__item">
                         <a href="#contacts" class="header__anchor link">Контакты</a>
@@ -264,12 +286,28 @@
         <!-- Секция чем мы занимемся -->
         <section class="duties">
             <div class="duties__container container">
-                <h2 class="title">
-                    Чем мы занимаемся
+                <h2 class="animation">
+                    <span style="--i:1;">Ч</span>
+                    <span style="--i:2;">е</span>
+                    <span style="--i:3;">м</span>
+                    <span style="--i:4;"> </span>
+                    <span style="--i:5;">м</span>
+                    <span style="--i:6;">ы</span>
+                    <span style="--i:7;"> </span>
+                    <span style="--i:8;">з</span>
+                    <span style="--i:9;">а</span>
+                    <span style="--i:10;">н</span>
+                    <span style="--i:11;">и</span>
+                    <span style="--i:12;">м</span>
+                    <span style="--i:13;">а</span>
+                    <span style="--i:14;">е</span>
+                    <span style="--i:15;">м</span>
+                    <span style="--i:16;">с</span>
+                    <span style="--i:17;">я</span>
                 </h2>
                 <ul class="grid list">
                     <li class="duties__item item">
-                        <picture>
+                            <picture >
                             <source srcset="./img/serveces/desktop/typing-desktop.webp 1x, ./img/serveces/desktop/2x/typing-desktop@2x.webp 2x" media="(min-width:1200px)" type="image/webp">
                             <source srcset="./img/serveces/desktop/typing-desktop.jpg 1x, ./img/serveces/desktop/2x/typing-desktop@2x.jpg 2x" media="(min-width:1200px)">
                             <img src="./img/serveces/desktop/typing-desktop.jpg" alt="Набор кода" class="duties___photo">
@@ -589,20 +627,20 @@
                     Присоединяйтесь
                 </b>
                 <ul class="social list">
-                                    <li class="social__item"><a href=""
-                                            class="social__link--greyer social__link link social-instagram"> <svg
+                                    <li class="footer__social-item social__item"><a href=""
+                                            class="footer__social-link social__link--greyer social__link link social-instagram"> <svg
                                                 class="social__icon--whited social__icon">
                                                 <use href="./img/svg-icon/sprite.svg#icon-instagram"></use>
                                             </svg> </a></li>
-                                    <li class="social__item"><a href="" class="social__link--greyer social__link link social-twitter">
+                                    <li class="footer__social-item  social__item"><a href="" class="footer__social-link social__link--greyer social__link link social-twitter">
                                             <svg class="social__icon--whited social__icon">
                                                 <use href="./img/svg-icon/sprite.svg#icon-twitter"></use>
                                             </svg> </a></li>
-                                    <li class="social__item"><a href="" class="social__link--greyer social__link link social-facebook">
+                                    <li class="footer__social-item  social__item"><a href="" class="footer__social-link social__link--greyer social__link link social-facebook">
                                             <svg class="social__icon--whited social__icon">
                                                 <use href="./img/svg-icon/sprite.svg#icon-facebook"></use>
                                             </svg> </a></li>
-                                    <li class="social__item"><a href="" class="social__link--greyer social__link link social-linkedin">
+                                    <li class="footer__social-item  social__item"><a href="" class="footer__social-link social__link--greyer social__link link social-linkedin">
                                             <svg class="social__icon--whited social__icon">
                                                 <use href="./img/svg-icon/sprite.svg#icon-linkedin"></use>
                                             </svg> </a></li>
@@ -628,6 +666,11 @@
     <script src="./js/progress-bar.js"></script>
     <script src="./js/jquery.iMissYou.min.js"></script>
     <script src="./js/settings-miss-you.js"></script>
+    <script src="./js/popap.js"></script>
+    <script src="./js/animation-text.js"></script>
+
+
+
     <!-- ===========================END JAVA-SCRIPT============================= -->
 
 </body>

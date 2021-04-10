@@ -10,10 +10,12 @@
 @import "./base/container";
 
 /* ===========COMPONENTS============================ */
+@import "./components/popap";
 @import "./components/button";
 @import "./components/title";
 @import "./components/subtitle";
 @import "./components/logo";
+@import "./components/_animation-text";
 @import "./components/grid";
 @import "./components/item";
 @import "./components/human";
@@ -30,4 +32,3 @@
 @import "./layout/_staff";
 @import "./layout/_customer";
 @import "./layout/_footer";
-

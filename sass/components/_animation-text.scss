@@ -1,0 +1,30 @@
+.animation {
+    max-width: 414px;
+    margin: 0 auto 50px;
+    
+    & span {
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        animation: animate 2s ease-in-out infinite;
+        animation-delay: calc(0.1s * var(--i));
+        animation-play-state: paused;
+        
+        color:red;
+        @include font(28px, 700, 33px);
+        cursor: pointer;
+    }
+
+    &:hover span {
+        animation-play-state: running;
+    }
+}
+
+@keyframes animate {
+    0%, 40%, 100% {
+        transform: translateY(-0);
+    }
+    20% {
+        transform: translateY(-50px);
+    }
+}
